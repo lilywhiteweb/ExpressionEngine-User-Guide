@@ -15,15 +15,15 @@
 
 The script global variable is meant for generating URLs for use when linking to scripts. The basic syntax is this:
 
-    {script='template_group/js_template'}
+    {path='template_group/js_template'}
 
 Make sure you substitute "template_group" and "js_template" with the name of your actual template group and JS template.
 
 The script variables is used exclusively in the JS declarations in your pages. It must contain the template group/template name where your script is located:
 
-    <link rel="preload" as="script" href="{script='channel/channel_js'}" />
+    <link rel="preload" as="script" href="{path='channel/channel_js'}" />
 
-    <script src="{script='channel/channel_js'}"></script>
+    <script src="{path='channel/channel_js'}"></script>
 
 In many respects, this variable works much like the {path=''} global variable. However, there are some special considerations for the script variable:
 
